@@ -180,3 +180,79 @@ AttributeError: 'DataIngestionConfig' object has no attribute 'dataset_name'
 [2026-03-21 00:32:25,464: INFO: data_ingestion: Dataset saved successfully at: artifacts\data_ingestion]
 [2026-03-21 00:32:25,466: INFO: data_ingestion: Using Hugging Face format; skipping zip extraction.]
 [2026-03-21 00:32:25,466: INFO: main: stage Data Ingestion Stage completed]
+[2026-03-23 17:13:32,519: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-23 17:13:32,519: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-23 17:13:32,519: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-23 17:13:32,519: INFO: common: created directory at: artifacts]
+[2026-03-23 17:13:32,519: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-23 17:13:32,519: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-23 17:13:32,519: INFO: data_ingestion: Downloading dataset knkarthick/samsum from Hugging Face...]
+[2026-03-23 17:13:32,968: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-23 17:13:33,021: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/README.md "HTTP/1.1 200 OK"]
+[2026-03-23 17:13:33,302: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-23 17:13:34,080: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/knkarthick/samsum/knkarthick/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-23 17:13:34,383: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/revision/6b929ff10edec703164e3ddb2e94aae058c9ab5f "HTTP/1.1 200 OK"]
+[2026-03-23 17:13:34,671: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-03-23 17:13:34,671: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-23 17:13:35,165: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=knkarthick/samsum "HTTP/1.1 200 OK"]
+[2026-03-23 17:13:35,526: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-23 17:13:35,824: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-03-23 17:13:36,228: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-03-23 17:13:36,337: ERROR: main: [Errno 22] Invalid argument: 'C:/Users/HP/Desktop/Y3 S2/projects/Text-Summarizer/artifacts/data_ingestion/train/data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 11, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\components\data_ingestion.py", line 22, in download_file
+    dataset.save_to_disk(self.config.root_dir)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\venv\lib\site-packages\datasets\dataset_dict.py", line 1377, in save_to_disk
+    dataset.save_to_disk(
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\venv\lib\site-packages\datasets\arrow_dataset.py", line 1921, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\venv\lib\site-packages\datasets\arrow_dataset.py", line 1945, in _save_to_disk_single
+    writer = ArrowWriter(
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\venv\lib\site-packages\datasets\arrow_writer.py", line 524, in __init__
+    self.stream = self._fs.open(path, "wb")
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\venv\lib\site-packages\fsspec\spec.py", line 1349, in open
+    f = self._open(
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\venv\lib\site-packages\fsspec\implementations\local.py", line 214, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\venv\lib\site-packages\fsspec\implementations\local.py", line 391, in __init__
+    self._open()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\venv\lib\site-packages\fsspec\implementations\local.py", line 396, in _open
+    self.f = open(self.path, mode=self.mode)
+OSError: [Errno 22] Invalid argument: 'C:/Users/HP/Desktop/Y3 S2/projects/Text-Summarizer/artifacts/data_ingestion/train/data-00000-of-00001.arrow'
+[2026-03-23 23:17:30,883: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-23 23:17:30,887: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-23 23:17:30,905: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-23 23:17:30,906: INFO: common: created directory at: artifacts]
+[2026-03-23 23:17:30,907: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-23 23:17:30,908: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-23 23:17:30,909: INFO: data_ingestion: Downloading dataset knkarthick/samsum from Hugging Face...]
+[2026-03-23 23:17:31,360: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-23 23:17:31,407: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/README.md "HTTP/1.1 200 OK"]
+[2026-03-23 23:17:31,704: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-23 23:17:32,516: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/knkarthick/samsum/knkarthick/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-23 23:17:32,901: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/revision/6b929ff10edec703164e3ddb2e94aae058c9ab5f "HTTP/1.1 200 OK"]
+[2026-03-23 23:17:33,181: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-03-23 23:17:33,636: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=knkarthick/samsum "HTTP/1.1 200 OK"]
+[2026-03-23 23:17:33,928: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-23 23:17:34,217: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-03-23 23:17:34,643: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-03-23 23:17:34,921: INFO: data_ingestion: Dataset saved successfully at: artifacts\data_ingestion]
+[2026-03-23 23:17:34,926: INFO: data_ingestion: Using Hugging Face format; skipping zip extraction.]
+[2026-03-23 23:17:34,927: INFO: main: stage Data Ingestion Stage completed]
+[2026-03-23 23:17:34,927: INFO: main: stage Data Transformation Stage initiated]
+[2026-03-23 23:17:34,930: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-23 23:17:34,932: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-23 23:17:34,933: INFO: common: created directory at: artifacts]
+[2026-03-23 23:17:34,934: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-23 23:17:35,207: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-23 23:17:35,208: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-23 23:17:35,253: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-23 23:17:35,574: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-23 23:17:35,621: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-23 23:17:35,916: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-23 23:17:36,202: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-23 23:17:43,993: INFO: main: stage Data Transformation Stage completed]
