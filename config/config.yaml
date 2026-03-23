@@ -1,0 +1,12 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  dataset_name: "knkarthick/samsum"  # The Hugging Face ID
+  local_data_file: C:/Users/HP/Desktop/Y3 S2/projects/Text-Summarizer/data/real_dataset.zip
+  unzip_dir: artifacts/data_ingestion/raw
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/samsum_dataset
+  tokenizer_name: google/pegasus-cnn_dailymail

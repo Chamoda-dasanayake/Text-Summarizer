@@ -1,0 +1,182 @@
+[2026-03-19 01:33:10,897: INFO: main: Logging is implemented]
+[2026-03-19 01:33:25,801: INFO: main: Logging is implemented]
+[2026-03-20 16:12:59,343: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-20 16:12:59,359: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-20 16:12:59,362: INFO: common: created directory at: artifacts]
+[2026-03-20 16:12:59,365: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-20 16:14:52,755: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-20 16:14:52,757: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-20 16:14:52,761: INFO: common: created directory at: artifacts]
+[2026-03-20 16:14:52,765: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-20 16:15:31,723: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-20 16:15:31,725: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-20 16:15:31,727: INFO: common: created directory at: artifacts]
+[2026-03-20 16:15:31,729: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-20 18:20:22,986: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-20 18:20:22,992: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-20 18:20:22,996: INFO: common: created directory at: artifacts]
+[2026-03-20 18:20:22,998: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-20 18:21:24,738: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-20 18:21:24,741: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-20 18:21:24,741: INFO: common: created directory at: artifacts]
+[2026-03-20 18:21:24,748: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-20 18:25:33,831: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-20 18:25:33,843: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-20 18:25:33,847: INFO: common: created directory at: artifacts]
+[2026-03-20 18:25:33,851: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-20 18:25:33,853: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-20 18:32:32,724: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-20 18:32:32,727: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-20 18:32:32,731: INFO: common: created directory at: artifacts]
+[2026-03-20 18:32:32,732: INFO: common: created directory at: C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\data]
+[2026-03-20 18:32:32,734: INFO: common: created directory at: C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\data\raw]
+[2026-03-20 18:32:43,689: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-20 18:32:43,691: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-20 18:32:43,693: INFO: common: created directory at: artifacts]
+[2026-03-20 18:32:43,694: INFO: common: created directory at: C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\data]
+[2026-03-20 18:32:43,695: INFO: common: created directory at: C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\data\raw]
+[2026-03-20 23:15:05,833: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-20 23:15:05,833: ERROR: main: 'DataIngestionTrainingPipeline' object has no attribute 'initiate_data_ingestion']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+AttributeError: 'DataIngestionTrainingPipeline' object has no attribute 'initiate_data_ingestion'
+[2026-03-20 23:15:32,969: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-20 23:15:32,969: ERROR: main: 'DataIngestionTrainingPipeline' object has no attribute 'initiate_data_ingestion']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+AttributeError: 'DataIngestionTrainingPipeline' object has no attribute 'initiate_data_ingestion'
+[2026-03-20 23:16:56,423: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-20 23:16:56,423: ERROR: main: 'DataIngestionTrainingPipeline' object has no attribute 'initiate_data_ingestion']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+AttributeError: 'DataIngestionTrainingPipeline' object has no attribute 'initiate_data_ingestion'
+[2026-03-20 23:18:07,101: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-20 23:18:07,102: ERROR: main: 'DataIngestionTrainingPipeline' object has no attribute 'initiate_data_ingestion']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+AttributeError: 'DataIngestionTrainingPipeline' object has no attribute 'initiate_data_ingestion'
+[2026-03-20 23:19:11,119: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-20 23:19:11,119: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-20 23:19:11,119: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-20 23:19:11,119: INFO: common: created directory at: artifacts]
+[2026-03-20 23:19:11,119: INFO: common: created directory at: C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\data]
+[2026-03-20 23:19:11,119: INFO: common: created directory at: C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\data\raw]
+[2026-03-20 23:19:11,119: ERROR: main: Local dataset file not found: C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\data\<actual-file-name>.zip]
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\components\data_ingestion.py", line 14, in download_file
+    raise FileNotFoundError(f"Local dataset file not found: {self.config.local_data_file}")
+FileNotFoundError: Local dataset file not found: C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\data\<actual-file-name>.zip
+[2026-03-20 23:20:20,396: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-20 23:20:20,407: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-20 23:20:20,417: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-20 23:20:20,418: INFO: common: created directory at: artifacts]
+[2026-03-20 23:20:20,418: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-20 23:20:20,418: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-20 23:20:20,419: ERROR: main: Local dataset file not found: C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\data\real_dataset.zip]
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\components\data_ingestion.py", line 14, in download_file
+    raise FileNotFoundError(f"Local dataset file not found: {self.config.local_data_file}")
+FileNotFoundError: Local dataset file not found: C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\data\real_dataset.zip
+[2026-03-21 00:02:08,623: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-21 00:02:08,625: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-21 00:02:08,629: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-21 00:02:08,629: INFO: common: created directory at: artifacts]
+[2026-03-21 00:02:08,631: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-21 00:02:08,631: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-21 00:02:08,631: ERROR: main: 'DataIngestionConfig' object has no attribute 'dataset_name']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\components\data_ingestion.py", line 16, in download_file
+    logger.info(f"Downloading dataset {self.config.dataset_name} from Hugging Face...")
+AttributeError: 'DataIngestionConfig' object has no attribute 'dataset_name'
+[2026-03-21 00:05:16,876: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-21 00:05:16,876: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-21 00:05:16,884: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-21 00:05:16,889: INFO: common: created directory at: artifacts]
+[2026-03-21 00:05:16,890: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-21 00:05:16,890: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-21 00:05:16,890: ERROR: main: 'DataIngestionConfig' object has no attribute 'dataset_name']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\components\data_ingestion.py", line 16, in download_file
+    logger.info(f"Downloading dataset {self.config.dataset_name} from Hugging Face...")
+AttributeError: 'DataIngestionConfig' object has no attribute 'dataset_name'
+[2026-03-21 00:25:05,865: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-21 00:25:05,871: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-21 00:25:05,871: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-21 00:25:05,871: INFO: common: created directory at: artifacts]
+[2026-03-21 00:25:05,871: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-21 00:25:05,871: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-21 00:25:05,871: ERROR: main: 'DataIngestionConfig' object has no attribute 'dataset_name']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\components\data_ingestion.py", line 16, in download_file
+    logger.info(f"Downloading dataset {self.config.dataset_name} from Hugging Face...")
+AttributeError: 'DataIngestionConfig' object has no attribute 'dataset_name'
+[2026-03-21 00:28:31,442: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-21 00:28:31,446: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-21 00:28:31,449: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-21 00:28:31,449: INFO: common: created directory at: artifacts]
+[2026-03-21 00:28:31,457: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-21 00:28:31,459: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-21 00:28:31,460: ERROR: main: 'DataIngestionConfig' object has no attribute 'dataset_name']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\components\data_ingestion.py", line 16, in download_file
+    logger.info(f"Downloading dataset {self.config.dataset_name} from Hugging Face...")
+AttributeError: 'DataIngestionConfig' object has no attribute 'dataset_name'
+[2026-03-21 00:32:18,953: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-21 00:32:18,954: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-21 00:32:18,956: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-21 00:32:18,956: INFO: common: created directory at: artifacts]
+[2026-03-21 00:32:18,957: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-21 00:32:18,957: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-21 00:32:18,957: INFO: data_ingestion: Downloading dataset knkarthick/samsum from Hugging Face...]
+[2026-03-21 00:32:19,391: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-21 00:32:19,391: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-21 00:32:19,442: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/README.md "HTTP/1.1 200 OK"]
+[2026-03-21 00:32:19,493: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/README.md "HTTP/1.1 200 OK"]
+[2026-03-21 00:32:19,807: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-21 00:32:20,702: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/knkarthick/samsum/knkarthick/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-21 00:32:21,029: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/revision/6b929ff10edec703164e3ddb2e94aae058c9ab5f "HTTP/1.1 200 OK"]
+[2026-03-21 00:32:21,303: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-03-21 00:32:21,767: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=knkarthick/samsum "HTTP/1.1 200 OK"]
+[2026-03-21 00:32:22,059: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-21 00:32:22,340: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-03-21 00:32:22,691: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-03-21 00:32:22,973: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/train.csv "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-21 00:32:23,017: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/train.csv "HTTP/1.1 200 OK"]
+[2026-03-21 00:32:23,066: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/train.csv "HTTP/1.1 200 OK"]
+[2026-03-21 00:32:24,300: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/validation.csv "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-21 00:32:24,394: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/validation.csv "HTTP/1.1 200 OK"]
+[2026-03-21 00:32:24,492: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/validation.csv "HTTP/1.1 200 OK"]
+[2026-03-21 00:32:24,835: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/test.csv "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-21 00:32:24,928: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/test.csv "HTTP/1.1 200 OK"]
+[2026-03-21 00:32:25,095: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/test.csv "HTTP/1.1 200 OK"]
+[2026-03-21 00:32:25,464: INFO: data_ingestion: Dataset saved successfully at: artifacts\data_ingestion]
+[2026-03-21 00:32:25,466: INFO: data_ingestion: Using Hugging Face format; skipping zip extraction.]
+[2026-03-21 00:32:25,466: INFO: main: stage Data Ingestion Stage completed]
