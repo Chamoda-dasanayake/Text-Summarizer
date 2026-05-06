@@ -21,11 +21,16 @@ except Exception as e:
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
+from fastapi import BackgroundTasks
+
+def run_training_pipeline():
+    os.system("python main.py")
+
 @app.get("/train")
-async def training():
+async def training(background_tasks: BackgroundTasks):
     try:
-        os.system("python main.py")
-        return Response("Training successful !! ")
+        background_tasks.add_task(run_training_pipeline)
+        return Response("Training has been successfully queued in the background! Please check terminal logs for progress.")
     except Exception as e:
         return Response(f"Error Occurred! {e}")
 

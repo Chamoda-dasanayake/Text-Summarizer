@@ -1,0 +1,41 @@
+stages:
+  data_ingestion:
+    cmd: python src/textSummarizer/pipeline/stage_1_data_ingestion_pipeline.py
+    deps:
+      - src/textSummarizer/pipeline/stage_1_data_ingestion_pipeline.py
+      - config/config.yaml
+    outs:
+      - artifacts/data_ingestion/samsum_dataset
+
+  data_transformation:
+    cmd: python src/textSummarizer/pipeline/stage_2_data_transformation_pipeline.py
+    deps:
+      - src/textSummarizer/pipeline/stage_2_data_transformation_pipeline.py
+      - artifacts/data_ingestion/samsum_dataset
+    outs:
+      - artifacts/data_transformation/samsum_dataset
+
+  model_trainer:
+    cmd: python src/textSummarizer/pipeline/stage_3_model_trainer.py
+    deps:
+      - artifacts/data_transformation/samsum_dataset
+      - src/textSummarizer/pipeline/stage_3_model_trainer.py
+    params:
+      - num_train_epochs
+      - warmup_steps
+      - per_device_train_batch_size
+      - weight_decay
+    outs:
+      - artifacts/model_trainer/pegasus-samsum-model
+      - artifacts/model_trainer/tokenizer
+
+  model_evaluation:
+    cmd: python src/textSummarizer/pipeline/stage_4_model_evaluation.py
+    deps:
+      - artifacts/model_trainer/pegasus-samsum-model
+      - artifacts/model_trainer/tokenizer
+      - artifacts/data_transformation/samsum_dataset
+      - src/textSummarizer/pipeline/stage_4_model_evaluation.py
+    metrics:
+      - artifacts/model_evaluation/metrics.csv:
+          cache: false

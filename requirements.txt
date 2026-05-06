@@ -20,3 +20,5 @@ uvicorn
 Jinja2
 PyPDF2
 python-multipart
+mlflow
+dvc

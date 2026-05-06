@@ -85,3 +85,18 @@ class ModelEvaluation:
 
         df = pd.DataFrame(rouge_dict, index = ['pegasus'] )
         df.to_csv(self.config.metric_file_name, index=False)
+
+        # ====================================================
+        # MLOps Integration: MLflow Experiment Tracking
+        # ====================================================
+        import mlflow
+        import os
+
+        # Tracking experiments to a local sqlite database
+        mlflow.set_tracking_uri("sqlite:///mlflow.db")
+        mlflow.set_experiment("Text-Summarizer-Evaluation")
+        
+        with mlflow.start_run():
+            mlflow.log_metrics(rouge_dict)
+            mlflow.log_artifact(self.config.metric_file_name)
+            print("Successfully logged ROUGE metrics to MLflow Registry!")
