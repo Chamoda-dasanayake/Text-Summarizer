@@ -112,10 +112,6 @@ This system delivers **instant, accurate text summarization** powered by a fine-
 | **Frontend UI** | HTML5, CSS3, Jinja2, JavaScript |
 | **System Utilities**| PyPDF2, YAML Parsing, Boto3 |
 
-## 📸 Screenshots / Demo
-*(Add your stunning UI screenshot here!)*
-<!-- Place an image named UI_Showcase.png in an image folder and reference it here: ![Summary UI Demo](./UI_Showcase.png) -->
-
 ## ⚙️ How to Run
 **1. Clone the repository and navigate inside:**
 ```bash
