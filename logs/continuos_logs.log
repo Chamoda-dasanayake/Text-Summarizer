@@ -1353,3 +1353,7 @@ NameError: name 'Path' is not defined
 [2026-05-07 00:58:25,865: INFO: common: yaml file: params.yaml loaded successfully]
 [2026-05-07 00:58:25,866: INFO: common: created directory at: artifacts]
 [2026-05-07 00:58:25,867: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-05-07 00:58:28,883: INFO: server: Started server process [11100]]
+[2026-05-07 00:58:28,884: INFO: on: Waiting for application startup.]
+[2026-05-07 00:58:28,884: INFO: on: Application startup complete.]
+[2026-05-07 00:58:28,884: INFO: server: Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)]
